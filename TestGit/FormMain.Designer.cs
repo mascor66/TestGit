@@ -30,6 +30,7 @@
         {
             this.buttonClose = new System.Windows.Forms.Button();
             this.buttonSayHello = new System.Windows.Forms.Button();
+            this.labelIMC = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonClose
@@ -53,16 +54,27 @@
             this.buttonSayHello.UseVisualStyleBackColor = true;
             this.buttonSayHello.Click += new System.EventHandler(this.buttonSayHello_Click);
             // 
+            // labelIMC
+            // 
+            this.labelIMC.AutoSize = true;
+            this.labelIMC.Location = new System.Drawing.Point(157, 129);
+            this.labelIMC.Name = "labelIMC";
+            this.labelIMC.Size = new System.Drawing.Size(31, 17);
+            this.labelIMC.TabIndex = 2;
+            this.labelIMC.Text = "IMC";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(370, 251);
+            this.Controls.Add(this.labelIMC);
             this.Controls.Add(this.buttonSayHello);
             this.Controls.Add(this.buttonClose);
             this.Name = "FormMain";
             this.Text = "TestGit";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -70,6 +82,7 @@
 
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Button buttonSayHello;
+        private System.Windows.Forms.Label labelIMC;
     }
 }
 
