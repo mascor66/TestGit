@@ -22,5 +22,9 @@ namespace TestGit
             Application.Exit();
         }
 
+        private void buttonSayHello_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello");
+        }
     }
 }
